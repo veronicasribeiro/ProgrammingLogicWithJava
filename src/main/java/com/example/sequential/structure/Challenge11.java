@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
      Problem: 'Duration'
      Create a program to read a duration of time in seconds, then print this

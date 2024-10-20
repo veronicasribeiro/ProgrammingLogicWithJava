@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: 'Sum'
     Make a program to read two integer values X and Y, and then display on

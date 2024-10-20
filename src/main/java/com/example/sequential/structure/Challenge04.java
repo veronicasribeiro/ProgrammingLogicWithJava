@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
      Problem: 'Ages'
      Make a program to read the name and age of two people. At the end, display

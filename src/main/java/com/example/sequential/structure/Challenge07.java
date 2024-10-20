@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: 'Circle'
     Make a program to read the value "r" of the radius of a circle, and then

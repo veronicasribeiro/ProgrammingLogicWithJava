@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: 'Consumption'
     Make a program to read the total distance (in km) traveled by a car, as

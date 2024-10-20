@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: "Land"
     Make a program to read the width and length measurements of a rectangular

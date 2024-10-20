@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
      Problem: 'Change'
      Make a program to calculate change during the payment process of a product

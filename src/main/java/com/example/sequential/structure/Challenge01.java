@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 import java.text.DecimalFormat;
 
 public class Challenge01 {

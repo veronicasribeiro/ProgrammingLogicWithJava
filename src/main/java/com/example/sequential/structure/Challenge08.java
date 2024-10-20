@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: 'Payment'
     Create a program to read an employee's name, the amount they receive per

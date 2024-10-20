@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: 'Measurements'
     Make a program to read three measurements A, B and C. Then calculate and

@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 /*
     Problem: 'Rectangle'
     Make a program to read the measurements of the base and heigth of a
