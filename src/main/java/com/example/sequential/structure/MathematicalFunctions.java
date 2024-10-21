@@ -1,3 +1,5 @@
+package com.example.sequential.structure;
+
 public class MathematicalFunctions {
     public static void main(String[] args) {
 
