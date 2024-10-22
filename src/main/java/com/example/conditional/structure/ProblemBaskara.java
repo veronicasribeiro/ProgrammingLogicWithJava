@@ -27,16 +27,19 @@ public class ProblemBaskara {
 
         double x1;
         double x2;
+        double x;
 
         if (discriminant > 0) {
             x1 = (-coefficientB + Math.sqrt(discriminant)) / (2 * coefficientA);
             x2 = (-coefficientB - Math.sqrt(discriminant)) / (2 * coefficientA);
-
             String x1Format = df.format(x1);
             String x2Format = df.format(x2);
-
             System.out.println("X1 = " + x1Format);
             System.out.println("X2 = " + x2Format);
+        } else if (discriminant == 0) {
+            x = -coefficientB / (2 * coefficientA);
+            String xFormat = df.format(x);
+            System.out.println("Single real root: " + xFormat);
         } else {
             System.out.println("This equation has no real roots");
         }
