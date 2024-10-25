@@ -50,11 +50,7 @@ public class ChallengeTax {
         double abatement;
         double taxDue;
 
-        if (maximumDeductible > deductibleExpenses) {
-            abatement = deductibleExpenses;
-        } else {
-            abatement =maximumDeductible;
-        }
+        abatement = Math.min(maximumDeductible, deductibleExpenses);
         taxDue = grossTax - abatement;
 
         String salaryTaxFormat = df.format(salaryTax);
