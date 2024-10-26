@@ -19,5 +19,7 @@ public class AboutWhile {
         System.out.println("Sum = " + sum);
 
         scanner.close();
+        
+        
     }
 }
