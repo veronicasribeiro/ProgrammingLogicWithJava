@@ -1,6 +1,5 @@
 package com.example.repetitive.structure;
 
-// Test
 import java.util.Scanner;
 
 public class ProblemFixedPassword {
