@@ -27,5 +27,7 @@ public class ProblemWeightedAverage {
             String averageFormat = df.format(average);
             System.out.println("AVERAGE = " + averageFormat);
         }
+
+        scanner.close();
     }
 }
