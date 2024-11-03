@@ -14,5 +14,8 @@ public class ProblemOddSequence {
                 System.out.println(i);
             }
         }
+
+        scanner.close();
+
     }
 }

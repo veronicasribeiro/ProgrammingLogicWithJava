@@ -27,5 +27,8 @@ public class ProblemOddEven {
                 System.out.println("NULL");
             }
         }
+
+        scanner.close();
+
     }
 }
