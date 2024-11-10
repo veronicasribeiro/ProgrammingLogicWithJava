@@ -12,7 +12,9 @@ public class Merchant {
         int n = scanner.nextInt();
         scanner.nextLine();
 
-        double purchasePrice, sellingPrice, profit, profitPercentage;
+        double[] purchasePrice = new double[n];
+        double[] sellingPrice = new double[n];
+
         double profitTotal = 0, totalSales = 0, totalPurchase = 0;
         int totalProductsBelow10 = 0, totalProductsBetween10And20 = 0, profitAbove20 = 0;
 
@@ -22,20 +24,20 @@ public class Merchant {
             String name = scanner.nextLine();
 
             System.out.print("Purchase price: ");
-            purchasePrice = scanner.nextDouble();
+            purchasePrice[i] = scanner.nextDouble();
 
             System.out.print("Selling price: ");
-            sellingPrice = scanner.nextDouble();
+            sellingPrice[i] = scanner.nextDouble();
 
             scanner.nextLine();
 
-            totalPurchase = totalPurchase + purchasePrice;
-            totalSales = totalSales + sellingPrice;
+            double profit = sellingPrice[i] - purchasePrice[i];
+            double profitPercentage = (profit / purchasePrice[i]) * 100;
 
-            profit = sellingPrice - purchasePrice;
             profitTotal = profitTotal + profit;
+            totalPurchase = totalPurchase + purchasePrice[i];
+            totalSales = totalSales + sellingPrice[i];
 
-            profitPercentage = (profit / purchasePrice) * 100;
             if (profitPercentage < 10) {
                 totalProductsBelow10++;
             } else if (profitPercentage >= 10 && profitPercentage <= 20) {
