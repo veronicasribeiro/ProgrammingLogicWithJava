@@ -2,7 +2,7 @@ package com.example.Vectors;
 
 import java.util.Scanner;
 
-public class AboutArrays {
+public class ProblemAboutArrays {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

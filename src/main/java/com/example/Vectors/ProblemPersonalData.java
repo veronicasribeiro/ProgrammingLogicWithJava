@@ -3,7 +3,7 @@ package com.example.Vectors;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class PersonalData {
+public class ProblemPersonalData {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#0.00");

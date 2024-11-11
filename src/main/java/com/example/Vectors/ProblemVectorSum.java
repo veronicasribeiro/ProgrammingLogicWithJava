@@ -17,16 +17,14 @@ public class ProblemVectorSum {
         }
 
         double sum = 0;
-        int count = 0;
 
         System.out.print("\nVALUES =");
         for (int i = 0; i <= n - 1 ; i++) {
             System.out.print(" " + array[i] + " "); // Prints the values on the same line
             sum = sum + array[i];
-            count++;
         }
 
-        double average = sum / count;
+        double average = sum / n;
 
         System.out.println("\nSUM = " + sum);
         System.out.println("AVERAGE = " + average);

@@ -2,7 +2,7 @@ package com.example.Vectors;
 
 import java.util.Scanner;
 
-public class Older {
+public class ProblemOlder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

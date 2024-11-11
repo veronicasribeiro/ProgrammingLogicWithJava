@@ -2,7 +2,7 @@ package com.example.Vectors;
 
 import java.util.Scanner;
 
-public class AveragePairs {
+public class ProblemAveragePairs {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
