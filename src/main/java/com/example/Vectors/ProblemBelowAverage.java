@@ -10,17 +10,18 @@ public class ProblemBelowAverage {
         int n = scanner.nextInt();
 
         double[] array = new double[n];
-        int count = 0;
         double sumArray = 0;
 
         for (int i = 0; i < n ; i++) {
             System.out.print("Enter a number: ");
             array[i] = scanner.nextDouble();
-            sumArray = sumArray + array[i];
-            count++;
         }
 
-        double averageArray = sumArray / count;
+        for (int i = 0; i < n; i++) {
+            sumArray = sumArray + array[i];
+        }
+
+        double averageArray = sumArray / n;
 
         System.out.println("\nVECTOR AVERAGE " + averageArray);
         System.out.println("BELOW AVERAGE ELEMENTS: ");

@@ -12,8 +12,6 @@ public class ProblemOlder {
 
         String[] name = new String[n];
         int[] age = new int[n];
-        int older = 0;
-        String olderPerson = "";
 
         for (int i = 0; i < n; i++) {
             System.out.println((i + 1) + "st person's details:");
@@ -23,14 +21,19 @@ public class ProblemOlder {
             System.out.print("Age: ");
             age[i] = scanner.nextInt();
             scanner.nextLine();
+        }
 
+        int older = age[0];
+        int positionOlder = 0;
+
+        for (int i = 0; i < n; i++) {
             if (age[i] > older) {
                 older = age[i];
-                olderPerson = name[i];
+                positionOlder = i;
             }
         }
 
-        System.out.println("OLDER PERSON: " + olderPerson);
+        System.out.println("OLDER PERSON: " + name[positionOlder]);
 
         scanner.close();
     }
