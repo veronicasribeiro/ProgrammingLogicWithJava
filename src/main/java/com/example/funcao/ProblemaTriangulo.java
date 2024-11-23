@@ -16,8 +16,8 @@ public class ProblemaTriangulo {
         double medidasY2 = scanner.nextDouble();
         double medidasY3 = scanner.nextDouble();
 
-        double areaX = calcularTrianguloX(medidasX1, medidasX2, medidasX3);
-        double areaY = calcularTrianguloY(medidasY1, medidasY2, medidasY3);
+        double areaX = calcularTriangulo(medidasX1, medidasX2, medidasX3);
+        double areaY = calcularTriangulo(medidasY1, medidasY2, medidasY3);
 
         System.out.println("Area de X = " + areaX);
         System.out.println("Area de Y = " + areaY);
@@ -25,13 +25,10 @@ public class ProblemaTriangulo {
         scanner.close();
     }
 
-    public static double calcularTrianguloX(double medidasX1, double medidasX2, double medidasX3) {
-        double p = (medidasX1 + medidasX2 + medidasX3) / 2;
-        return Math.sqrt(p * (p - medidasX1) * (p - medidasX2) * (p - medidasX3));
+    // A função tem intenção de ser um pedaço de código genérico que funciona para qualquer valor
+    public static double calcularTriangulo(double a, double b, double c) {
+        double p = (a + b + c) / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
-    public static double calcularTrianguloY(double medidasY1, double medidasY2, double medidasY3) {
-        double p = (medidasY1 + medidasY2 + medidasY3) / 2;
-        return Math.sqrt(p * (p - medidasY1) * (p - medidasY2) * (p - medidasY3));
-    }
 }
