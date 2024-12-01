@@ -16,7 +16,7 @@ public class ProblemaTemperatura {
         scanner.close();
     }
 
-    public static double calcularConversao(double temperaturaEmf) {
-        return 5.0 / 9.0 * (temperaturaEmf - 32);
+    public static double calcularConversao(double temperaturaEmF) {
+        return 5.0 / 9.0 * (temperaturaEmF - 32);
     }
 }
